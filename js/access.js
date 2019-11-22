@@ -10,7 +10,7 @@ $(document).ready(function(){
         <h1 class="accessibility-header">Accessibility Options</h1>
         <div class="button-grid">
             <button id="toggle-cursor" class="toggle-buttons">
-                <p>    
+                <p>
                     Cursor
                 </p>
                 <div class="status">
@@ -81,6 +81,12 @@ $(document).ready(function(){
                 <p>
                     Text to Speech
                 </p>
+                <div class="status">
+                    <div class="status-mark-one"></div>
+                </div>
+            </button>
+            <button id="toggle-animation" class="toggle-buttons">
+                <p>Disable Animations</p>
                 <div class="status">
                     <div class="status-mark-one"></div>
                 </div>
@@ -227,5 +233,11 @@ $(document).ready(function(){
             speechSynthesis.speak(utterThis);
             });
         }
+    });
+
+    //Disable animations
+    $("#toggle-animation").click(function(){
+        $("body").toggleClass("disable-animation");
+        $("#toggle-animation .status-mark-one").toggleClass("status-mark-active");
     });
 });
