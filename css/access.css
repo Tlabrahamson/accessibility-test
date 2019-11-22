@@ -65,6 +65,10 @@
     border-radius: 10px 10px 10px 10px !important;
     border: solid 1px #262626 !important;
     cursor: pointer !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 16px !important;
     height: 50px !important;
     margin: 10px !important;
