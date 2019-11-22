@@ -1,0 +1,159 @@
+/* COPY TO ACCESS-FOR-ALL WHEN STYLES ARE COMPLETE */
+
+#toggle-accessibility {
+    position: fixed !important;
+    top: 10px !important;
+    right: 15px !important;
+    z-index: 99999 !important;
+}
+
+.main-toggle {
+    background: #fff !important;
+    border: solid 2px #4d4d4d !important;
+    border-radius: 50px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    position: relative !important;
+    height: 50px !important;
+    width: 50px !important;
+    transition: opacity 500ms !important;
+}
+
+.main-toggle:hover {
+    opacity: .7 !important;
+    transition: opacity 500ms !important;
+}
+
+.main-toggle:active {
+    background: #eee !important;
+    opacity: .4 !important;
+    transition: opacity 500ms !important;
+}
+
+.accessibility-container {
+    display: none !important;
+    z-index: 99999 !important;
+}
+
+.show {
+    background: #fff !important;
+    border: solid 1px #000 !important;
+    border-radius: 10px 10px 10px 10px !important;
+    position: fixed !important;
+    display: flex !important;
+    right: 5px !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    margin-top: 70px !important;
+    padding: 15px !important;
+    width: 300px !important;
+}
+
+.accessibility-header {
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+}
+
+.button-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+
+.toggle-buttons {
+    background: #fff !important;
+    border-radius: 10px 10px 10px 10px !important;
+    border: solid 1px #262626 !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    height: 50px !important;
+    margin: 10px !important;
+    transition: opacity 500ms !important;
+    width: 100px !important;
+}
+
+.toggle-buttons:hover {
+    opacity: .7 !important;
+    transition: opacity 500ms !important;
+}
+
+.toggle-buttons:active {
+    background: #eee !important;
+    opacity: .4 !important;
+    transition: opacity 500ms !important;
+}
+
+.big-cursor {
+    cursor: url('../images/access-cursor.jpg'), auto !important;	
+}
+
+.small-font {
+    font-size: 1em !important;
+}
+
+.medium-font {
+    font-size: 1.5em !important;
+}
+
+.large-font {
+    font-size: 2em !important;
+}
+
+.small-space {
+    letter-spacing: 0 !important;
+}
+
+.medium-space {
+    letter-spacing: 4px !important;
+}
+
+.large-space {
+    letter-spacing: 8px !important;
+}
+
+.increase-weight {
+    font-weight: 800 !important;
+}
+
+.highlight {
+    background: #000 !important;
+    border: solid 2px #ffff00 !important;
+    color: #ffff00 !important;
+}
+
+.reader {
+    background: #000 !important;
+    border: solid 2px #ffff00 !important;
+    display: block !important;
+    height: 10px !important;
+    position: absolute !important;
+    width: 100% !important; 
+    z-index: 99999 !important;
+}
+
+.key-control-outline {
+    border: dashed 3px #ff0000 !important;
+}
+
+.status {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.status-mark-one {
+    border: solid 1px #fff;
+    height: 5px;
+    width: 30px;
+}
+
+.status-mark-two {
+    border: solid 1px #fff;
+    height: 5px;
+    width: 30px;
+}
+
+.status-mark-active {
+    background: #4d4d4d;
+}
