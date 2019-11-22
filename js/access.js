@@ -43,6 +43,16 @@ $(document).ready(function(){
                     <div class="status-mark-one"></div>
                 </div>
             </button>
+            <button id="toggle-contrast" class="toggle-buttons">
+                <p>
+                    Invert
+                </p>
+                <div class="status">
+                    <div class="contrast-mark-one"></div>
+                    <div class="contrast-mark-two"></div>
+                    <div class="contrast-mark-three"></div>
+                </div>
+            </button>
             <button id="toggle-highlight" class="toggle-buttons">
                 <p>
                     Highlight Links
@@ -136,6 +146,32 @@ $(document).ready(function(){
     $("#toggle-weight").click(function(){
         $("body").toggleClass("increase-weight");
         $("#toggle-weight .status-mark-one").toggleClass("status-mark-active");
+    });
+
+    //Toggle the Contrast
+    $("#toggle-contrast").click(function(){
+        if($("html").hasClass("")){
+            $("html").addClass("invert");
+            $("#toggle-contrast p").text("Grayscale");
+            $("#toggle-contrast .contrast-mark-one").addClass("status-mark-active");
+        }
+        else if($("html").hasClass("invert")){
+            $("html").addClass("grayscale").removeClass("invert");
+            $("#toggle-contrast p").text("Hue");
+            $("#toggle-contrast .contrast-mark-two").addClass("status-mark-active");
+        }
+        else if($("html").hasClass("grayscale")){
+            $("html").addClass("hue").removeClass("grayscale");
+            $("#toggle-contrast p").text("Default");
+            $("#toggle-contrast .contrast-mark-three").addClass("status-mark-active");
+        }
+        else{
+            $("html").removeClass("hue");
+            $("#toggle-contrast p").text("Invert");
+            $("#toggle-contrast .contrast-mark-one").removeClass("status-mark-active");
+            $("#toggle-contrast .contrast-mark-two").removeClass("status-mark-active");
+            $("#toggle-contrast .contrast-mark-three").removeClass("status-mark-active");
+        }
     });
 
     //Toggle Highlight Links

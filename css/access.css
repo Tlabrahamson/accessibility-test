@@ -146,18 +146,41 @@
 
 }
 
-.status-mark-one {
-    border: solid 1px #fff;
-    height: 5px;
-    width: 30px;
-}
-
+.status-mark-one,
 .status-mark-two {
     border: solid 1px #fff;
     height: 5px;
     width: 30px;
 }
 
+.contrast-mark-one,
+.contrast-mark-two,
+.contrast-mark-three {
+    border:solid 1px #fff;
+    height: 5px;
+    width: 20px;
+}
+
 .status-mark-active {
     background: #4d4d4d;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.contrast-light {
+    filter: contrast();
+}
+
+.contrast-dark {
+    filter: contrast();
+}
+
+.hue {
+    filter: hue-rotate(90deg);
 }
