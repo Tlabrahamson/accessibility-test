@@ -46,13 +46,14 @@
     flex-direction: column !important;
     justify-content: space-evenly !important;
     margin-top: 70px !important;
-    padding: 15px !important;
+    padding: 10px !important;
     width: 300px !important;
+    height: 550px;
 }
 
 .accessibility-header {
     font-size: 24px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
 }
 
 .button-grid {
@@ -72,8 +73,9 @@
     align-items: center;
     flex-direction: column;
     font-size: 16px !important;
-    height: 50px !important;
+    height: 85px !important;
     margin: 10px !important;
+    padding-bottom: 15px;
     transition: opacity 500ms !important;
     width: 100px !important;
 }
@@ -87,6 +89,11 @@
     background: #eee !important;
     opacity: .4 !important;
     transition: opacity 500ms !important;
+}
+
+.button-img {
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .big-cursor {

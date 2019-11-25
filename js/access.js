@@ -10,6 +10,7 @@ $(document).ready(function(){
         <h1 class="accessibility-header">Accessibility Options</h1>
         <div class="button-grid">
             <button id="toggle-cursor" class="toggle-buttons">
+                <img class="button-img" src="./images/cursor.png" alt="">
                 <p>
                     Cursor
                 </p>
@@ -18,6 +19,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-font" class="toggle-buttons">
+                <img class="button-img" src="./images/font-size.png" alt="">
                 <p>
                     Font Size
                 </p>
@@ -27,6 +29,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-space" class="toggle-buttons">
+                <img class="button-img" src="./images/letter-spacing.png" alt="">
                 <p>
                     Letter Spacing
                 </p>
@@ -36,6 +39,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-weight" class="toggle-buttons">
+                <img class="button-img" src="./images/readable-font.png" alt="">  
                 <p>
                     Readable Font
                 </p>
@@ -44,6 +48,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-contrast" class="toggle-buttons">
+                <img class="button-img" src="./images/invert.png" alt="">
                 <p>
                     Invert
                 </p>
@@ -54,6 +59,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-highlight" class="toggle-buttons">
+                <img class="button-img" src="./images/highlight.png" alt="">
                 <p>
                     Highlight Links
                 </p>
@@ -62,6 +68,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-reader" class="toggle-buttons">
+                <img class="button-img" src="./images/reading-guide.png" alt="">
                 <p>
                     Reader Guide
                 </p>
@@ -70,6 +77,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-keyboard" class="toggle-buttons">
+                <img class="button-img" src="./images/keyboard-control.png" alt="">
                 <p>
                     Keyboard Control
                 </p>
@@ -78,6 +86,7 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-speech" class="toggle-buttons">
+                <img class="button-img" src="./images/text-to-speech.png" alt="">
                 <p>
                     Text to Speech
                 </p>
@@ -86,21 +95,15 @@ $(document).ready(function(){
                 </div>
             </button>
             <button id="toggle-animation" class="toggle-buttons">
-                <p>Disable Animations</p>
+                <img class="button-img" src="./images/disable-animation.png" alt="">
+                <p>
+                    Disable Animations
+                </p>
                 <div class="status">
                     <div class="status-mark-one"></div>
                 </div>
             </button>
         </div>
-        <div id="googleTranslateElement"></div>
-        `);
-    $("body").append(`
-        <script type="text/javascript">
-            function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'googleTranslateElement');
-            }
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
         `);
     
     //Toggle the Accessibility Menu
